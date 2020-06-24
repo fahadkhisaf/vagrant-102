@@ -51,12 +51,16 @@ Then I can install bundle.
 
 - In project folder file (this file) open bash
 
-- Then type in : gem install bundler
-
+- Then type in 
+```bash
+ gem install bundler
+```
 - Now start up VM (make sure the provisions have ran)
 
-- Go to "environment\spec-tests" (using bash), and type in : rake spec
-
+- Go to "environment\spec-tests" (using bash), and type in : 
+```bash
+rake spec
+```
 - Installing nodejs, this will be in provision https://www.techiediaries.com/ubuntu/install-nodejs-npm-on-ubuntu-20-04/
 
 ```
