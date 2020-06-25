@@ -45,40 +45,53 @@ check how to install stuff in it (the dependencies)
 
 # Steps to get working 
 
-- Download ruby 
+# Steps to get working
 
-Then I can install bundle.
+ 
 
-- In project folder file (this file) open bash
+### Prerequisites
 
-- Then type in 
+ 
+
+- Download Ruby
+
+ 
+
 ```bash
- gem install bundler
+gem install bundler
 ```
-- Now start up VM (make sure the provisions have ran)
+<!-- installs bundler -->
 
-- Go to "environment\spec-tests" (using bash), and type in : 
+ 
+
 ```bash
-rake spec
+bundle install
 ```
-- Installing nodejs, this will be in provision https://www.techiediaries.com/ubuntu/install-nodejs-npm-on-ubuntu-20-04/
+<!-- installs ruby dependencies -->
 
-```
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-sudo apt install curl
-sudo apt-get install -y nodejs
-```
-- The last test is to install pm2, in provision
+ 
 
-```
-npm install -g pm2
-```
-# How to sync folders 
+### Activating Virtual Machine
 
-```
-config.vm.synced_folder "folder_path_to_origin_folder", "path_in_main"
-```
+ 
 
+1. git clone repo
+<!-- to take all the code & the initialized vagrant -->
+
+ 
+
+2. in root of repo run
+
+ 
+
+```bash
+vagrant up
+```
+<!-- to start up vagrant  -->
+
+ 
+
+3. That's it!
 
 
 
